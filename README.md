@@ -29,6 +29,6 @@ Il met en avant mes compétences, certifications, parcours académique, projets 
 
 ```bash
 git clone https://github.com/tonprofil/portfolio-angular-tailwind.git
-cd portfolio-angular-tailwind
+cd my-portfolio
 npm install
 ng serve
