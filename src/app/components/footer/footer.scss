@@ -1,0 +1,18 @@
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Responsive adaptation */
+@media (max-width: 640px) {
+  .flex-shrink-0 {
+    width: 50vw !important; /* cartes presque pleine largeur sur mobile */
+  }
+   button {
+    padding: 0.5rem;  /* plus petites */
+    font-size: 1.25rem;
+  }
+}

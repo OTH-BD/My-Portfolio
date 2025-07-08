@@ -1,0 +1,74 @@
+<div
+  class="w-screen h-full overflow-y-scroll bg-no-repeat bg-cover">
+
+  <div
+    class="xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 bg-[#111111] rounded-xl overflow-hidden">
+    <!-- Nav -->
+    <nav class="bg-[#121111] shadow-lg w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="#" class="lg:text-xl md:text-lg text-sm font-bold text-gray-700">
+              <span class="px-1 bg-pink-600 rounded-full animate-[ping_2s_linear_infinite]">O</span>
+              <span class="px-1 bg-cyan-500 rounded-full animate-[ping_2s_linear_infinite]">T</span>
+              <span class="px-1 bg-pink-600 rounded-full animate-[ping_2.1s_linear_infinite]">H</span>
+              <span class="px-1 bg-cyan-400 rounded-full animate-[ping_2.2s_linear_infinite]">M</span>
+              <span class="px-1 bg-green-300 rounded-full animate-[ping_2.3s_linear_infinite]">A</span>
+              <span class="px-1 bg-pink-600 rounded-full animate-[ping_2.4s_linear_infinite]">N</span>
+              <span class="px-1 bg-cyan-400 rounded-full animate-[ping_2.5s_linear_infinite]">E</span>
+              <span class="px-1 bg-green-400 rounded-full animate-[ping_2.6s_linear_infinite]">-B</span>
+              <span class="px-1 bg-cyan-600 rounded-full animate-[ping_2.7s_linear_infinite]">D</span>
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex space-x-8">
+            <a routerLink="/" class="text-gray-400 hover:text-pink-600">Home</a>
+            <a routerLink="/about" class="text-gray-400 hover:text-cyan-400">About</a>
+            <a routerLink="/skills" class="text-gray-400 hover:text-green-400">Skills</a>
+            <a routerLink="/projects" class="text-gray-400 hover:text-cyan-400">Projects</a>
+            <a routerLink="/certifications" class="text-gray-400 hover:text-cyan-600">Certifications</a>
+            <a routerLink="/testimonials" class="text-gray-400 hover:text-pink-600">Testimonials</a>
+            
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="lg:hidden flex items-center">
+            <button (click)="toggleMobileMenu()" id="mobile-menu-button" class="text-cyan-300 hover:text-cyan-600 focus:outline-none">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+          </div>
+        </div>
+      </div>
+
+          
+                                <!-- Mobile Menu -->
+                                <div *ngIf="isMobileMenuOpen" id="mobile-menu" class="absolute inset-0 z-50 transition-opacity duration-300"
+                                  [ngClass]="{ 'opacity-100': isMobileMenuOpen, 'opacity-0': !isMobileMenuOpen }">
+                                  <!-- Overlay Background -->
+                                  <div class="absolute inset-0 bg-[#111111] bg-opacity-50" (click)="closeMobileMenu()"></div>
+                                
+                                  <!-- Sliding Menu Panel -->
+                                  <div class="fixed inset-y-0 left-0 bg-[#111111] w-64 p-6 transition-transform duration-300 transform"
+                                    [ngClass]="{ '-translate-x-full': !isMobileMenuOpen, 'translate-x-0': isMobileMenuOpen }">
+                                    <button (click)="closeMobileMenu()" class="text-cyan-400 hover:text-cyan-500 focus:outline-none mb-4">
+                                      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                                      </svg>
+                                    </button>
+                                    <nav class="space-y-4">
+                                      <a (click)="closeMobileMenu()" routerLink="/about" class="block text-pink-300 hover:text-pink-600">About</a>
+                                      <a (click)="closeMobileMenu()" routerLink="/skills" class="block text-gray-400 hover:text-cyan-400">Skills</a>
+                                      <a (click)="closeMobileMenu()" routerLink="/projects" class="block text-gray-400 hover:text-pink-600">Projects</a>
+                                      <a (click)="closeMobileMenu()" routerLink="/certifications" class="block text-gray-400 hover:text-pink-400">Certifications</a>
+
+                                      <a (click)="closeMobileMenu()" routerLink="/testimonials" class="block text-gray-400 hover:text-cyan-500">Testimonials</a>
+                                    </nav>
+                                  </div>
+                                </div>
+
+    </nav>
+

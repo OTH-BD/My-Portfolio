@@ -1,0 +1,134 @@
+<section class="relative md:px-0 px-4 md:my-10 bg-transparent text-white z-10">
+  <h2 class="text-4xl font-serif mb-16 text-center text-white tracking-tight gradient-text">
+    📜 Mes Certifications
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+    <div *ngFor="let cert of certifications"
+      class="relative group rounded-3xl p-1 bg-gradient-to-tr {{ cert.gradient }} shadow-xl hover:shadow-indigo-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img [src]="cert.img" [alt]="cert.title"
+          class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+
+        <h3 class="text-xl font-bold" [ngClass]="cert.color">{{ cert.title }}</h3>
+        <p class="text-sm text-gray-300">{{ cert.source }}</p>
+
+        <div class="cert-status">
+          <div class="status-dot"></div>
+          Certifié
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="relative  md:px-0 px-4 md:my-10 bg-transparent text-white z-10">
+ 
+     <h2 class="text-4xl font-serif mb-16 text-center text-white tracking-tight gradient-text">📜 Mes Certifications</h2>
+
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+
+
+    Carte magique 1 
+    <div class="relative group rounded-3xl p-1 bg-gradient-to-tr from-indigo-500 via-blue-500 to-purple-500 shadow-xl hover:shadow-indigo-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img src="assets/networkig.png" alt="Networking"
+             class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+        <h3 class="text-xl font-bold text-indigo-300 drop-shadow-[0_0_5px_cyan]">Networking Fundamentals</h3>
+        <p class="text-sm text-gray-300">Cisco Networking Academy</p>
+          <div class="cert-status">
+            <div class="status-dot"></div>
+                        Certifié
+          </div>
+      </div>
+    </div>
+
+     Carte magique 2 
+    <div class="relative group rounded-3xl p-1 bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 shadow-xl hover:shadow-pink-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img src="assets/englishIT1.png" alt="English for IT"
+             class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+        <h3 class="text-xl font-bold text-pink-300 drop-shadow-[0_0_5px_pink]">English for IT</h3>
+        <p class="text-sm text-gray-300">Cisco Networking Academy OpenEDG</p>
+        <div class="cert-status">
+            <div class="status-dot"></div>
+                        Certifié
+          </div>
+      </div>
+    </div>
+
+     Carte magique 
+    <div class="relative group rounded-3xl p-1 bg-gradient-to-tr from-indigo-500 via-blue-500 to-purple-500 shadow-xl hover:shadow-indigo-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img src="assets/networkig.png" alt="Networking"
+             class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+        <h3 class="text-xl font-bold text-indigo-300 drop-shadow-[0_0_5px_cyan]">Networking Fundamentals</h3>
+        <p class="text-sm text-gray-300">Cisco Networking Academy</p>
+          <div class="cert-status">
+            <div class="status-dot"></div>
+                        Certifié
+          </div>
+      </div>
+    </div>
+-->
+    <!-- <div class="relative group rounded-3xl p-1 bg-gradient-to-tr from-indigo-500 via-blue-500 to-purple-500 shadow-xl hover:shadow-indigo-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img src="assets/networkig.png" alt="Networking"
+             class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+        <h3 class="text-xl font-bold text-indigo-300 drop-shadow-[0_0_5px_cyan]">Networking Fundamentals</h3>
+        <p class="text-sm text-gray-300">Cisco Networking Academy</p>
+          <div class="cert-status">
+            <div class="status-dot"></div>
+                        Certifié
+          </div>
+      </div>
+    </div>
+
+      Carte magique 2 
+    <div class="relative group rounded-3xl p-1 bg-gradient-to-tr from-pink-500 via-purple-500 to-indigo-500 shadow-xl hover:shadow-pink-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img src="assets/englishIT1.png" alt="English for IT"
+             class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+        <h3 class="text-xl font-bold text-pink-300 drop-shadow-[0_0_5px_pink]">English for IT</h3>
+        <p class="text-sm text-gray-300">Cisco Networking Academy OpenEDG</p>
+        <div class="cert-status">
+            <div class="status-dot"></div>
+                        Certifié
+          </div>
+      </div>
+    </div> -->
+
+<!--        
+    <div class="relative group rounded-3xl p-1 bg-gradient-to-tr from-indigo-500 via-blue-500 to-purple-500 shadow-xl hover:shadow-indigo-500/80 transition-transform duration-700 transform hover:-translate-y-4 hover:rotate-1">
+      <div class="bg-black rounded-2xl p-4 transition-all duration-700 group-hover:bg-opacity-70 backdrop-blur-md">
+        <img src="assets/networkig.png" alt="Networking"
+             class="rounded-xl w-full h-56 object-cover mb-4 transition-transform duration-700 group-hover:scale-105" />
+        <h3 class="text-xl font-bold text-indigo-300 drop-shadow-[0_0_5px_cyan]">Networking Fundamentals</h3>
+        <p class="text-sm text-gray-300">Cisco Networking Academy</p>
+          <div class="cert-status">
+            <div class="status-dot"></div>
+                        Certifié
+          </div>
+      </div>
+    </div>
+    
+  </div>
+</section> --> 
