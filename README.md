@@ -1,34 +1,35 @@
-# Portfolio Angular avec Tailwind CSS - [OTHMANE]
+# 🚀 Portfolio Angular avec Tailwind CSS – OTHMANE BOUDALI
 
-Mon portfolio personnel développé avec **Angular** et stylisé avec **Tailwind CSS**.  
-Il met en avant mes compétences, certifications, parcours académique, projets et témoignages.
-
----
-
-## Technologies utilisées
-
-- Angular (version [20])  
-- Tailwind CSS (version [4])  
-- TypeScript, HTML, CSS  
-- Angular Router
+Bienvenue sur mon portfolio personnel développé avec **Angular 20** et stylisé avec **Tailwind CSS 4**.  
+Ce site met en valeur mes **compétences**, **certifications**, **projets** et mon **parcours académique**.
 
 ---
 
-## Sections principales
+## 🛠️ Technologies utilisées
 
-- **About** : présentation personnelle et parcours  
-- **Certification** : diplômes et certifications obtenus  
-- **Parcours académique** : résumé de mon cursus scolaire et universitaire  
-- **Skills** : compétences techniques détaillées  
-- **Projects** : portfolio de projets réalisés avec descriptions et technologies  
-- **Testimonials** : retours et recommandations de collègues ou clients  
+- ⚙️ **Angular 20**
+- 🎨 **Tailwind CSS 4**
+- 🧠 **TypeScript**
+- 🧾 **HTML/CSS**
+- 🌐 **Angular Router**
 
 ---
 
-## Installation et lancement
+## 📁 Sections principales
+
+- 👤 **About** – Présentation personnelle et parcours
+- 📜 **Certification** – Diplômes et certifications obtenus
+- 🎓 **Parcours académique** – Résumé de mon cursus scolaire et universitaire
+- 💼 **Skills** – Compétences techniques détaillées
+- 🧪 **Projects** – Projets réalisés avec descriptions & technologies
+- 🏫 **Education** – Mon parcours académique
+
+---
+
+## 🚧 Installation et Lancement
 
 ```bash
-git clone https://github.com/tonprofil/portfolio-angular-tailwind.git
+git clone https://github.com/OTH-BD/My-Portfolio.git
 cd my-portfolio
 npm install
 ng serve
