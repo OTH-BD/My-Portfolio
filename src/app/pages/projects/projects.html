@@ -1,84 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Section</title>
-    
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
-  
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet"> -->
- 
-</head>
-<body>
-    <div class="xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 mt-10 md:mt-16 text-center ">
-            <!-- Work Section -->
-        <section id="work" class="py-1 px-8 mt-0">
-            <div class="container mx-auto">
-             <h2 class="relative text-4xl mb-12 sm:mt-0 gradient-text font-serif text-center text-white tracking-tight ">👨🏻‍💻 Featured Work</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-                <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-neon/20 transition-all h-full">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                        alt="Project 1" 
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">AI Dashboard</h3>
-                    <p class="opacity-80 mb-4">Next.js + Tailwind + TensorFlow</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">React</span>
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">AI</span>
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">Node.js</span>
-                    </div>
-                    <a href="#" class="text-neon hover:underline">View Project →</a>
-                    </div>
-                </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-                <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-cyber/20 transition-all h-full">
-                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                        alt="Project 2" 
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
-                    <p class="opacity-80 mb-4">React + GraphQL + Stripe</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">React</span>
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">GraphQL</span>
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">MongoDB</span>
-                    </div>
-                    <a href="#" class="text-cyber hover:underline">View Project →</a>
-                    </div>
-                </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
-                <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-matrix/20 transition-all h-full">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                        alt="Project 3" 
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Blockchain Explorer</h3>
-                    <p class="opacity-80 mb-4">Solidity + Web3.js + Ethers</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">Blockchain</span>
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">Web3</span>
-                        <span class="px-3 py-1 bg-glass rounded-full text-sm">React</span>
-                    </div>
-                    <a href="#" class="text-matrix hover:underline">View Project →</a>
-                    </div>
-                </div>
-                </div>
+<div class="xl:w-[70%] lg:w-[80%] md:w-[90%] mx-auto relative md:px-0 px-4 md:my-10 mt-10 md:mt-16 text-center">
+  <section id="work" class="py-1 px-8 mt-0">
+    <div class="container mx-auto">
+      <h2 class="relative text-4xl mb-12 gradient-text font-serif text-center text-white tracking-tight">👨🏻‍💻 Featured Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let project of projects" class="tilt-effect" data-tilt data-tilt-max="5" data-tilt-glare="true">
+          <div class="glass-card rounded-xl overflow-hidden hover:shadow-lg hover:shadow-{{ project.color }}/20 transition-all h-full">
+            <img [src]="project.image" [alt]="project.title" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">{{ project.title }}</h3>
+              <p class="opacity-80 mb-4">{{ project.description }}</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span *ngFor="let tech of project.techs" class="px-3 py-1 bg-glass rounded-full text-sm">{{ tech }}</span>
+              </div>
+              <a [href]="project.link" class="text-{{ project.color }} hover:underline">View Project →</a>
             </div>
-            </div>
-        </section>
-
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
-</html>
+  </section>
+</div>

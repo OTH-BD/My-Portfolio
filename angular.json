@@ -32,8 +32,11 @@
             ],
             "styles": [
               "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/vanilla-tilt/dist/vanilla-tilt.min.js"
             ]
-          },
+    },
           "configurations": {
             "production": {
               "budgets": [
