@@ -19,11 +19,12 @@
         <!-- <div class="fixed inset-0 bg-gradient-to-br from-gray-600 via-black to-gray-600 -z-10 " ></div> -->
 
         <!-- Floating Particles -->
-
+            
 
         <!-- Hero Content -->
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-1 items-center animate-fade-in z-0 group-hover:z-50">
             <!-- Text Content -->
+             
             <div class="space-y-6">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight ">
                     Hi, I'm <span class="text-gradient">Boudali Othmane</span>
@@ -40,7 +41,17 @@
                 <p class="text-gray-300 text-lg max-w-lg">
                     I develop high-quality digital solutions with Angular
                     Spring Boot and cloud-native architectures.
+                    
                 </p>
+
+                 <!-- Greeting Badge (NOUVEAU) -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full text-sm animate-fade-in">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span class="text-gray-300">Available for work</span>
+                </div>
 
                 <div class="flex flex-wrap gap-4 pt-3">
 
@@ -101,7 +112,7 @@
 
                 <!-- Social Links -->
                 <div class="flex space-x-2 pt-2">
-
+                  
 
                 </div>
 
@@ -109,11 +120,37 @@
 
             <!-- Avatar Image -->
             <div class="relative block">
-                <div class="absolute -inset-4"></div>
-                <div class="relative rounded-2xl overflow-hidden border-4 border-gray-900 transform rotate-1 hover:rotate-2 transition-transform duration-500 w-68 h-68 md:w-auto md:h-auto mx-auto md:mx-0 mb-6 md:mb-0">
-                    <img src="https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Professional portrait" class="w-full h-full object-cover">
+                
+
+            
+                 <!-- Avatar Image (AMÉLIORE) -->
+            <div class="relative">
+                <!-- Animated gradient glow (NOUVEAU) -->
+                <div class="absolute -inset-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl blur-3xl opacity-20 animate-pulse"></div>
+                
+                <!-- Main image container -->
+                <div class="relative rounded-2xl overflow-hidden border-4 border-white/10 shadow-2xl transform hover:rotate-2 transition-all duration-500 w-80 h-80 md:w-96 md:h-96 mx-auto backdrop-blur-sm">
+                    <img src="assets/othrmv.png" alt="Professional portrait" class="w-full h-full object-cover">
+                    
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                    
+                    <!-- Decorative floating orbs (NOUVEAU) -->
+                    <div class="absolute top-6 right-6 w-24 h-24 bg-blue-500/20 rounded-full blur-2xl animate-float"></div>
+                    <div class="absolute bottom-6 left-6 w-20 h-20 bg-purple-500/20 rounded-full blur-2xl animate-float-delayed"></div>
                 </div>
+
+                <!-- Stats Cards (NOUVEAU) -->
+                <div class="absolute -bottom-4 -left-4 bg-black/40 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl hidden lg:block">
+                    <p class="text-3xl font-bold text-white">3+</p>
+                    <p class="text-sm text-gray-300">Years Exp</p>
+                </div>
+                
+                <div class="absolute -top-4 -right-4 bg-black/40 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl hidden lg:block">
+                    <p class="text-3xl font-bold text-white">20+</p>
+                    <p class="text-sm text-gray-300">Projects</p>
+                </div>
+            </div>
             </div>
         </div>
         

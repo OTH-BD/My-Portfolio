@@ -25,9 +25,9 @@ export class Certifications {
       color: 'text-pink-300 drop-shadow-[0_0_5px_pink]',
     },
     {
-      title: 'Networking Fundamentals',
-      source: 'Cisco Networking Academy',
-      img: 'assets/networkig.png',
+      title: 'Red Hat System Administration I',
+      source: 'Red Hat Academy',
+      img: 'assets/redhat.png',
       gradient: 'from-indigo-500 via-blue-500 to-purple-500',
       color: 'text-indigo-300 drop-shadow-[0_0_5px_cyan]',
     },
