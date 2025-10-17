@@ -12,27 +12,27 @@ declare var VanillaTilt: any;
 export class Projects implements AfterViewInit {
    projects = [
     {
-      title: 'AI Dashboard',
-      description: 'Next.js + Tailwind + TensorFlow',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      techs: ['React', 'AI', 'Node.js'],
-      link: '#',
+      title: '🤖 ChatBot Flutter App',
+      description: 'A simple Flutter application that provides a login screen and a chatbot interface using OpenAIs API',
+      image: 'https://raw.githubusercontent.com/OTH-BD/chatbot-app-flutter/refs/heads/main/screenshots/chat1.png',
+      techs: ['Flutter', 'Dart', 'OpenAI', 'Material Design', 'Ollama'],
+      link: 'https://github.com/OTH-BD/chatbot-app-flutter',
       color: 'neon'
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'React + GraphQL + Stripe',
-      image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      techs: ['React', 'GraphQL', 'MongoDB'],
-      link: '#',
+      title: '🏦 Application de Gestion des Comptes Bancaires',
+      description: ' application web complète pour la gestion de comptes bancaires, développée avec Spring Boot pour le backend et Angular pour le frontend.',
+      image: 'https://raw.githubusercontent.com/OTH-BD/Digital-Banking-App/refs/heads/main/screenshots/v1.png',
+      techs: ['JAVA', 'Spring Boot', 'MYSQL', 'Angular', 'TypeScript'],
+      link: 'https://github.com/OTH-BD/Digital-Banking-App',
       color: 'cyber'
     },
     {
-      title: 'Blockchain Explorer',
-      description: 'Solidity + Web3.js + Ethers',
-      image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-      techs: ['Blockchain', 'Web3', 'React'],
-      link: '#',
+      title: '🚀 User Management System',
+      description: 'Une application moderne de gestion dutilisateurs construite avec Angular 20, Bootstrap 5, et une architecture professionnelle basée sur les Signals',
+      image: 'https://raw.githubusercontent.com/OTH-BD/AngularUserManagementSys/refs/heads/main/screenshots/usersDirectoryList.png',
+      techs: ['Angular', 'Bootstrap', 'TypeScript'],
+      link: 'https://github.com/OTH-BD/AngularUserManagementSys',
       color: 'matrix'
     }
   ];

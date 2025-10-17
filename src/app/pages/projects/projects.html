@@ -12,7 +12,7 @@
               <div class="flex flex-wrap gap-2 mb-4">
                 <span *ngFor="let tech of project.techs" class="px-3 py-1 bg-glass rounded-full text-sm">{{ tech }}</span>
               </div>
-              <a [href]="project.link" class="text-{{ project.color }} hover:underline">View Project →</a>
+              <a target="_blank" [href]="project.link" class="text-{{ project.color }} hover:underline">View Project →</a>
             </div>
           </div>
         </div>
